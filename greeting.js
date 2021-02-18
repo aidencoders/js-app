@@ -30,10 +30,8 @@ function paintGreeting(text) {
 function loadName() {
   const currentUser = localStorage.getItem(USER_NAME);
   if (currentUser === null) {
-    // she is not
     askForName();
   } else {
-    // she is
     paintGreeting(currentUser);
   }
 }
